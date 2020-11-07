@@ -11,3 +11,5 @@ This piece of code can simply separate a full name into first name, last name an
 
 
 
+## Nuget-Package Manager 
+Install-Package FullNameSplit -Version 1.0.0 [![NuGet](https://img.shields.io/nuget/v/FullNameSplit.svg?style=flat)](https://www.nuget.org/packages/FullNameSplit/)
