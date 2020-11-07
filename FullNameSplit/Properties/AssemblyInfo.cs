@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("FullNameSplit")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Full Name Seperator")]
+[assembly: AssemblyDescription("This piece of code can simply separate a full name into first name, last name and middle names, regardless of the number of spaces between them. Even if the last name is more than one.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("FullNameSplit")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
+[assembly: AssemblyCompany("Andronovo")]
+[assembly: AssemblyProduct("Full Name Seperator")]
+[assembly: AssemblyCopyright("Copyright © Andronovo 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

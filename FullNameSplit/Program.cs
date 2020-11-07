@@ -16,7 +16,7 @@ namespace FullNameSplit
 
             Console.WriteLine("Not-Normalize Name: " + name);
             Console.WriteLine("Normalize Full Name: " + result.NormalizeFullName);
-            Console.WriteLine("First Name: " + result.Firsname);
+            Console.WriteLine("First Name: " + result.Firstname);
             Console.WriteLine("Surname Name: " + result.SurName);
             Console.WriteLine("Middle Names: " + result.MiddleNames);
             Console.ReadLine();

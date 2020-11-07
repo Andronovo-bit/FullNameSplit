@@ -12,9 +12,9 @@ namespace FullNameSplit
         /// Get Irregular FullName and Surname number, return Regular Fullname, Fistname, Surname and Middle name.
         /// </summary>
         /// <param name="fullName"></param>
-        /// <param name="surnameLegth"></param>
+        /// <param name="surnameLength"></param>
         /// <returns>Dynamic Data</returns>
-        public static dynamic FullNameSplitter(string fullName, int surnameNumber)
+        public static dynamic FullNameSplitter(string fullName, int surnameLength)
         {
             string normalizeFullName = "";
             string middleNames = "";
@@ -27,17 +27,17 @@ namespace FullNameSplit
 
             var normalizeSplitName = normalizeFullName.Split(' ');
 
-            var middleNameList = normalizeSplitName.Skip(1).Take(normalizeSplitName.Length - (surnameNumber + 1)).ToList();
+            var middleNameList = normalizeSplitName.Skip(1).Take(normalizeSplitName.Length - (surnameLength + 1)).ToList();
 
             middleNameList.ForEach(t => middleNames += t + (middleNameList[middleNameList.Count - 1].Equals(t) ? "" : " "));
 
-            var surNameList = normalizeSplitName.Reverse().Take(surnameNumber).Reverse().ToList();
+            var surNameList = normalizeSplitName.Reverse().Take(surnameLength).Reverse().ToList();
 
             surNameList.ForEach(t => surName += t + (surNameList[surNameList.Count - 1].Equals(t) ? "" : " "));
 
             firstName = normalizeSplitName[0];
 
-            return new { NormalizeFullName = normalizeFullName, Firsname = firstName, SurName = surName, MiddleNames = middleNames };
+            return new { NormalizeFullName = normalizeFullName, Firstname = firstName, SurName = surName, MiddleNames = middleNames };
         }
     }
 }
